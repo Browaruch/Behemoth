@@ -1,0 +1,5 @@
+Model=467
+Nazwa=Oceanic
+Pojemnosc=50.0
+Poziom=0
+Cena=20000 

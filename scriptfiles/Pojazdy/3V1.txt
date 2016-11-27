@@ -1,0 +1,5 @@
+Model=477
+Nazwa=ZR-350
+Pojemnosc=50.0
+Poziom=0
+Cena=33000

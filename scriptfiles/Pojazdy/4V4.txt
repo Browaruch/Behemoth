@@ -1,0 +1,5 @@
+Model=402
+Nazwa=Bufallo
+Pojemnosc=50.0
+Poziom=2
+Cena=79000 

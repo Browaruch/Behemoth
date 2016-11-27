@@ -1,0 +1,5 @@
+Model=415
+Nazwa=Cheetah
+Pojemnosc=50.0
+Poziom=4
+Cena=120000 

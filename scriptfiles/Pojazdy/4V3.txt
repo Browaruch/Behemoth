@@ -1,0 +1,5 @@
+Model=496
+Nazwa=Blista Compact
+Pojemnosc=50.0
+Poziom=2
+Cena=55000

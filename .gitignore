@@ -51,3 +51,13 @@ filterscripts/*.amx
 gamemodes/*.amx
 samp.ban
 server.cfg
+scriptfiles/Players
+scriptfiles/Bany
+scriptfiles/BanyIP
+scriptfiles/Domy
+scriptfiles/Logs
+scriptfiles/Premium
+scriptfiles/PrivAuta
+scriptfiles/Firmy
+scriptfiles/Frakcje
+scriptfiles/Serwer.txt

@@ -1,0 +1,5 @@
+Model=539
+Nazwa=Vortex
+Pojemnosc=30.0
+Poziom=2
+Cena=36000

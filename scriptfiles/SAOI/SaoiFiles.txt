@@ -1,0 +1,19 @@
+Truck.saoi
+Stacja SFLOT.saoi
+Granica SF-LV.saoi
+Trawka.saoi
+Granica BS-SF.saoi
+Kosciol SF.saoi
+Kosciol LV.saoi
+Kino.saoi
+Wyspa Skarbow.saoi
+Rondo LV.saoi
+SF-LV Autostrada.saoi
+Postoj Taxi-Tir Rondo.saoi
+Scena.saoi
+Baza PD.saoi
+Randka.saoi
+Dekoracje Autostrady.saoi
+Roboty Drogowe SF.saoi
+Baza Vip SF.saoi
+Salon SF.saoi

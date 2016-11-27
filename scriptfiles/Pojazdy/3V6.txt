@@ -1,0 +1,5 @@
+Model=494
+Nazwa=Hotring Racer
+Pojemnosc=50.0
+Poziom=6
+Cena=2500000

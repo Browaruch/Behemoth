@@ -1,0 +1,5 @@
+Model=500
+Nazwa=Mesa
+Pojemnosc=50.0
+Poziom=0
+Cena=15000 

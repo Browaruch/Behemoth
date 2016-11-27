@@ -1,0 +1,5 @@
+Model=566
+Nazwa=Tahoma
+Pojemnosc=50.0
+Poziom=0
+Cena=28000 

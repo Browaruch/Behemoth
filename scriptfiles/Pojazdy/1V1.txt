@@ -1,0 +1,5 @@
+Model=579
+Nazwa=Huntley
+Pojemnosc=50.0
+Poziom=1
+Cena=19000 

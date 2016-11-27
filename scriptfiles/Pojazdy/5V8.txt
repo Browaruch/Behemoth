@@ -1,0 +1,5 @@
+Model=567
+Nazwa=Savanna
+Pojemnosc=50.0
+Poziom=3
+Cena=100000 

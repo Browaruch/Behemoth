@@ -1,0 +1,5 @@
+Model=600
+Nazwa=Picador
+Pojemnosc=50.0
+Poziom=2
+Cena=43000 

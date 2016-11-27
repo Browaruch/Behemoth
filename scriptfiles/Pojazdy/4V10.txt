@@ -1,0 +1,5 @@
+Model=429
+Nazwa=Banshee
+Pojemnosc=50.0
+Poziom=4
+Cena=210000 

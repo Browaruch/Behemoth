@@ -1,0 +1,5 @@
+Model=533
+Nazwa=Feltzer
+Pojemnosc=50.0
+Poziom=1
+Cena=42000 

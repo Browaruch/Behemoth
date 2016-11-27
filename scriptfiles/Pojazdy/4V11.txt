@@ -1,0 +1,5 @@
+Model=541
+Nazwa=Bullet
+Pojemnosc=50.0
+Poziom=5
+Cena=800000 

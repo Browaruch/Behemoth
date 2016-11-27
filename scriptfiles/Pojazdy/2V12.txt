@@ -1,0 +1,5 @@
+Model=562
+Nazwa=Elegy
+Pojemnosc=50.0
+Poziom=5
+Cena=900000

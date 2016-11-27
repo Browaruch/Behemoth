@@ -1,0 +1,5 @@
+Model=581
+Nazwa=BF-400
+Pojemnosc=30.0
+Poziom=2
+Cena=25000

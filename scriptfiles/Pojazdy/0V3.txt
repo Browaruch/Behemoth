@@ -1,0 +1,5 @@
+Model=461
+Nazwa=PCJ-600
+Pojemnosc=30.0
+Poziom=1
+Cena=15000

@@ -1,0 +1,5 @@
+Model=586
+Nazwa=Wayfarer
+Pojemnosc=30.0
+Poziom=0
+Cena=11000 

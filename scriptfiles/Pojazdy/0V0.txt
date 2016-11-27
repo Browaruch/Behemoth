@@ -1,0 +1,5 @@
+Model=462
+Nazwa=Faggio
+Pojemnosc=30.0
+Poziom=0
+Cena=9000 

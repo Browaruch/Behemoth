@@ -1,0 +1,5 @@
+Model=411
+Nazwa=Infernus
+Pojemnosc=50.0
+Poziom=8
+Cena=4205000 

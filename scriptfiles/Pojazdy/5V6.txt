@@ -1,0 +1,5 @@
+Model=534
+Nazwa=Remington
+Pojemnosc=50.0
+Poziom=1
+Cena=47000 

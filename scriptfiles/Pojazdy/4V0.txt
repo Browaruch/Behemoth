@@ -1,0 +1,5 @@
+Model=589
+Nazwa=Club
+Pojemnosc=50.0
+Poziom=1
+Cena=39000 

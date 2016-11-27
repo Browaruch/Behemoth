@@ -1,0 +1,5 @@
+Model=522
+Nazwa=NRG-500
+Pojemnosc=30.0
+Poziom=7
+Cena=3000000 

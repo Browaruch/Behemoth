@@ -1,0 +1,5 @@
+Model=475
+Nazwa=Sabre
+Pojemnosc=50.0
+Poziom=1
+Cena=44000

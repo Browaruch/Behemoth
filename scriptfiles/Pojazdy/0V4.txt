@@ -1,0 +1,5 @@
+Model=468
+Nazwa=Sanchez
+Pojemnosc=30.0
+Poziom=1
+Cena=20000

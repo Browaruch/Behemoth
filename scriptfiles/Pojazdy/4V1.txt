@@ -1,0 +1,5 @@
+Model=565
+Nazwa=Flash
+Pojemnosc=50.0
+Poziom=1
+Cena=80000 

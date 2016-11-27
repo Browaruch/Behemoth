@@ -1,0 +1,5 @@
+Model=603
+Nazwa=Phoenix
+Pojemnosc=50.0
+Poziom=2
+Cena=85000 

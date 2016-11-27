@@ -1,0 +1,5 @@
+Model=495
+Nazwa=Sandking
+Pojemnosc=50.0
+Poziom=2
+Cena=130000

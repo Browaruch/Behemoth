@@ -1,0 +1,5 @@
+Model=571
+Nazwa=Kart
+Pojemnosc=30.0
+Poziom=0
+Cena=29000 

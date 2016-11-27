@@ -1,0 +1,5 @@
+Model=521
+Nazwa=FCR-900
+Pojemnosc=30.0
+Poziom=2
+Cena=28000

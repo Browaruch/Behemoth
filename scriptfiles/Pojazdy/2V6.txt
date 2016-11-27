@@ -1,0 +1,5 @@
+Model=561
+Nazwa=Stratum
+Pojemnosc=50.0
+Poziom=3
+Cena=38000 

@@ -1,0 +1,5 @@
+Model=508
+Nazwa=Journey
+Pojemnosc=50.0
+Poziom=3
+Cena=75000 

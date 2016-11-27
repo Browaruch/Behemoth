@@ -1,0 +1,5 @@
+Model=412
+Nazwa=Voodoo
+Pojemnosc=50.0
+Poziom=0
+Cena=25000 

@@ -1,0 +1,5 @@
+Model=551
+Nazwa=Merit
+Pojemnosc=50.0
+Poziom=2
+Cena=35000 

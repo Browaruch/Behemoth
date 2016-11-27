@@ -1,0 +1,5 @@
+Model=535
+Nazwa=Slamvan
+Pojemnosc=50.0
+Poziom=4
+Cena=150000 

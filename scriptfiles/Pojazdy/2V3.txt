@@ -1,0 +1,5 @@
+Model=507
+Nazwa=Elegant
+Pojemnosc=50.0
+Poziom=1
+Cena=32000 
