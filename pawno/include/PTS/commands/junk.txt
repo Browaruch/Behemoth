@@ -1,0 +1,34 @@
+/*
+CMD:salonauta(playerid,params[])
+{
+	new gString[500];
+	new buffer[100];
+	new priv[50];
+	new Wlasciciel[300];
+	for(new i; i < MAX_PRIV;i++)
+	{
+		format(priv,sizeof(priv),"/PrivAuta2/%i.txt",i);
+		if(dini_Exists(priv))
+		{
+			Wlasciciel = dini_Get(priv,"Wlasciciel");
+			if(strcmp(Wlasciciel,GetPlayerNick(playerid),true) == 0)
+			{
+				format(buffer,sizeof(buffer),"%i\t%i\t%s",i,dini_Int(priv,"PojazdID"),dini_Get(priv,"Name"));
+				strcat(gString,buffer);
+				ShowPlayerDialog(playerid,348,DIALOG_STYLE_LIST,"Wybierz auto",gString,"Wybierz","Zamknij");
+				return 1;
+			}
+		}
+	}
+	return 1;
+}
+*/
+
+
+/*
+CMD:event(playerid,params[])
+{
+	ShowPlayerDialog(playerid,349,DIALOG_STYLE_LIST,"Event WIELKANOCNY","Opis eventu\nPlan eventu\nNamierz event\nWy³¹cz namierzanie","Wybierz","Zamknij");
+	return 1;
+}
+*/

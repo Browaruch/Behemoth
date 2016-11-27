@@ -61,3 +61,6 @@ scriptfiles/PrivAuta
 scriptfiles/Firmy
 scriptfiles/Frakcje
 scriptfiles/Serwer.txt
+pawno/include/PTS/meta/mysql.inc
+scriptfiles/SAOI
+Obiekty
