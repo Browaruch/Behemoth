@@ -63,5 +63,6 @@ scriptfiles/Frakcje
 scriptfiles/Serwer.txt
 pawno/include/PTS/meta/mysql.inc
 pawno/include/PTS/meta/security.inc
+pawno/include/PTS/meta/version.inc
 scriptfiles/SAOI
 Obiekty
