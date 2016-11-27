@@ -45,3 +45,9 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+
+server_log.txt
+filterscripts/*.amx
+gamemodes/*.amx
+samp.ban
+server.cfg

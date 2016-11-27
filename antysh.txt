@@ -1,0 +1,144 @@
+forward TimerSpeedHack(playerid);
+public TimerSpeedHack(playerid)
+{
+	new DataDzisiejsza[30];
+	new DDDzien,DDRok,DDMiesiac,DDGodzina,DDMinuta,DDSekunda;
+	gettime(DDGodzina,DDMinuta,DDSekunda);
+	getdate(DDRok,DDMiesiac,DDDzien);
+	format(DataDzisiejsza,sizeof(DataDzisiejsza),"%02i.%02i.%i | %02i:%02i:%02i",DDDzien,DDMiesiac,DDRok,DDGodzina,DDMinuta,DDSekunda);
+	if(IsPlayerNPC(playerid)){return 1;}
+	if(AntyAB == 1)
+	{
+		new vid = GetPlayerVehicleID(playerid);
+		new string[1000];
+		if(IsPlayerInAnyVehicle(playerid))
+		{
+			if(gGracz[playerid][AdminLvl] < LEVEL_HEADADMIN)
+			{
+				if(GetVehicleSpeed(vid) > 350.0 && GetVehicleModel(vid) != 538)
+				{
+					format(string,sizeof(string),"[AC]{D1D1D1}Anty Cheat wyrzuci³ gracza %s[%i] za: Speed Hack [%.0f].",GetPlayerNick(playerid),playerid,GetVehicleSpeed(vid));
+					SendClientMessageToAll(COLOR_RED,string);
+					format(string,sizeof(string),"\n[%s][AC]%s (IP:%s) - Speed Hack(?): %.0f/350 KM/H. Wyrzucono.",DataDzisiejsza,GetPlayerNick(playerid),gGracz[playerid][IPp],GetVehicleSpeed(vid));
+					Write("/LogiAC.txt",string);
+					GameTextForPlayer(playerid,"~r~nie czituj!~n~~g~SH",5000,4);
+					SetTimerEx("KickGracza",200,false,"d",playerid);
+					return 1;
+				}
+			}
+		}
+	}
+	if(gGracz[playerid][Zalogowany] == true){gGracz[playerid][CzasOnline] = gGracz[playerid][CzasOnline]+2;}
+	new string[1000];
+	new Float:x, Float:y,Float:z;
+	new administracja = 0;
+	new surf = GetPlayerSurfingVehicleID(playerid);
+	if(AntyAB == 1)
+	{
+		if(gGracz[playerid][AdminLvl] < 4 && gGracz[playerid][PoradnikNumer] == 0 && gGracz[playerid][Zalogowany] == true)
+		{
+			GetPlayerPos(playerid,x,y,z);
+			/*if(!IsPlayerInRangeOfPoint(playerid,500,gGracz[playerid][NewX],gGracz[playerid][NewY],gGracz[playerid][NewZ]))
+			{
+				format(string,sizeof(string),"•AC•{D1D1D1}Anty Cheat sk³ada raport: %s[%i] za: TP hack.",GetPlayerNick(playerid),playerid);
+				FoxForeach(i,Character)
+				{
+					if(gGracz[i][AdminLvl] >= 3 && gGracz[i][StatusZW] == false)
+					{
+ 						SendClientMessage(i,COLOR_RED,string);
+						administracja++;
+					}
+				}
+			}*/
+			/*if(GetPlayerSkin(playerid) != gGracz[playerid][ZapisanySkin])
+			{
+				format(string,sizeof(string),"•AC•{D1D1D1}Anty Cheat sk³ada raport: %s[%i] za: nielegalna zmniania Skinu.",GetPlayerNick(playerid),playerid);
+				FoxForeach(i,Character)
+				{
+					if(gGracz[i][AdminLvl] >= 3 && gGracz[i][StatusZW] == false)
+					{
+						if(gGracz[playerid][RaportAB] == false){SendClientMessage(i,COLOR_RED,string);}
+					}
+				}
+			}*/
+			if(IsPlayerInRectangle(playerid,1021.9781,500.1533,3010.0474,3149.7249) && gGracz[playerid][PoradnikNumer] == 0 && gGracz[playerid][Specowanie] == false)
+			{
+				if(z > 100.200)
+				{
+					if(GetPlayerWeapon(playerid) != 46 && !IsPlayerInHelikoptr(playerid))
+					{
+						if(surf != INVALID_VEHICLE_ID)
+						{
+							format(string,sizeof(string),"•AC•{D1D1D1}Anty Cheat sk³ada raport: %s[%i] za: AirBreak.",GetPlayerNick(playerid),playerid);
+							FoxForeach(i,Character)
+							{
+								if(gGracz[i][AdminLvl] >= 3 && gGracz[i][StatusZW] == false)
+								{
+									if(gGracz[playerid][RaportAB] == false)
+									{
+			  							SendClientMessage(i,COLOR_RED,string);
+									}
+									administracja++;
+								}
+							}
+							if(administracja < 1)
+							{
+								format(string,sizeof(string),"\n[%s][AC]%s (IP:%s) - %i.",DataDzisiejsza,GetPlayerNick(playerid),gGracz[playerid][IPp],z);
+								GameTextForPlayer(playerid,"~r~nie czituj!~n~~y~AB",5000,4);
+								SetTimerEx("KickGracza",200,false,"d",playerid);
+								Write("/LogiAC.txt",string);
+							}
+							else
+							{
+								gGracz[playerid][RaportAB] = true;
+		  						SetTimerEx("SkladalesReport",10000,false,"d",playerid);
+							}
+						}
+					}
+				}
+			}
+			if(IsPlayerInAnyVehicle(playerid) && GetPlayerState(playerid) == PLAYER_STATE_DRIVER)
+			{
+				new vid = GetPlayerVehicleID(playerid);
+				new mid = GetVehicleModel(vid);
+				if(Paliwo[vid] <= 0)
+				{
+					if(mid != 592 && mid != 520 && mid != 519 && mid != 511 && mid != 476 && mid != 460 && mid != 593)
+					{
+						if(GetVehicleSpeed(vid) > 80.0)
+						{
+							format(string,sizeof(string),"•AC•{D1D1D1}Anty Cheat sk³ada raport: %s[%i] za: jazda bez paliwa.",GetPlayerNick(playerid),playerid);
+							GameTextForPlayer(playerid,"~r~nie czituj!~n~~y~AB",5000,4);
+							FoxForeach(i,Character)
+							{
+								if(gGracz[i][AdminLvl] >= 3 && gGracz[i][StatusZW] == false)
+								{
+									administracja++;
+									if(gGracz[playerid][RaportAB] == false)
+									{
+			  							SendClientMessage(i,COLOR_RED,string);
+									}
+								}
+							}
+							if(administracja < 1)
+							{
+								format(string,sizeof(string),"•AC•{D1D1D1}Anty Cheat wyrzuci³ gracza %s[%i] za: LAG(?)",GetPlayerNick(playerid),playerid);
+								SendClientMessageToAll(COLOR_RED,string);
+								format(string,sizeof(string),"\n[%s][AC]%s (IP: %s) - %.0f [brak paliwa]",DataDzisiejsza,GetPlayerNick(playerid),gGracz[playerid][IPp],GetVehicleSpeed(vid));
+								GameTextForPlayer(playerid,"~r~LAG",5000,4);
+								SetTimerEx("KickGracza",200,false,"d",playerid);
+								Write("/LogiAC.txt",string);
+							}
+							else
+							{
+								gGracz[playerid][RaportAB] = true;
+			  					SetTimerEx("SkladalesReport",15000,false,"d",playerid);
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	return 1;
+}

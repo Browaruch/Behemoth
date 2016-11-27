@@ -1,0 +1,4 @@
+/* Version */ 
+#define ENABLE_PROTECTION_VARIABLES 
+#define GMVERSION "2.0.24" 
+#define GMCOMPILED "skompilowana 16.10.2016 17:09:52 przez Serphi.x256@SERPHENT" 
